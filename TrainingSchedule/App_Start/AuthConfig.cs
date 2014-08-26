@@ -23,8 +23,8 @@ namespace TrainingSchedule
             //    consumerSecret: "");
 
             //OAuthWebSecurity.RegisterFacebookClient(
-            //    appId: "",
-            //    appSecret: "");
+            //    appId: "333588740141711",
+            //    appSecret: "284a5a5c89956f02a8113c36a5688392");
 
             //OAuthWebSecurity.RegisterGoogleClient();
         }

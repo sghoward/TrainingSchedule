@@ -1,0 +1,27 @@
+$color1: #1cf5d2;
+
+.newLogin {
+    width: 350px; 
+    height: 250px;
+    background: -webkit-linear-gradient($color1 33%, purple 33%, purple 66%,  $color1*2 66%);
+    border-radius: 20px;
+
+    ul {
+        margin-top: -7%;
+        li{ 
+            margin-top: 10%;
+        }
+        #last {
+            margin-top: 10%;
+            margin-bottom: -5%;
+        }
+        
+    }
+
+    #submitButton {
+        border: 2px solid purple;
+        border-radius: 10px;
+        margin-left: 40%;
+        background-color: $color1 + 50;
+    }
+}
