@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+    <thead>
+        <tr>Event Id</tr>
+        <tr>Event Name</tr>
+        <tr>Event Date</tr>
+        <tr>Technology</tr>
+    </thead>
+
+    <thead>View Event Sylabus and completion</thead>
+    @foreach (Event item in Model)
+    {
+        <tr>@item.EventId</tr>
+        <tr>@item.EventName</tr>
+        <tr>@item.EventDate</tr>
+        <tr>@item.Technology</tr>
+        <tr> @Html.ActionLink("View", "Event", "Client", routeValues: null, htmlAttributes: new { id = "item.EventId" })</tr>
+    }
+</table>

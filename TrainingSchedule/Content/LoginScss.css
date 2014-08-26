@@ -1,0 +1,18 @@
+.newLogin {
+  width: 350px;
+  height: 250px;
+  background: -webkit-linear-gradient(#1cf5d2 33%, purple 33%, purple 66%, #38ffff 66%);
+  border-radius: 20px; }
+  .newLogin ul {
+    margin-top: -7%; }
+    .newLogin ul li {
+      margin-top: 10%; }
+    .newLogin ul #last {
+      margin-top: 10%;
+      margin-bottom: -5%; }
+  .newLogin #submitButton {
+    border: 2px solid purple;
+    border-radius: 10px;
+    margin-left: 40%;
+    background-color: #38ffff; }
+

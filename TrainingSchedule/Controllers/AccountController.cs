@@ -37,12 +37,30 @@ namespace TrainingSchedule.Controllers
         {
             if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
             {
-                return RedirectToLocal(returnUrl);
+                return RedirectToAction("loginRedirect");
             }
 
             // If we got this far, something failed, redisplay form
             ModelState.AddModelError("", "The user name or password provided is incorrect.");
             return View(model);
+        }
+
+
+        public ActionResult loginRedirect()
+        {
+            if (User.IsInRole("Admin"))
+            {
+                return View("/Views/Admin/Index.cshtml");
+            }
+            else if (User.IsInRole("Client"))
+            {
+                return View("/Views/Client/Index.cshtml");
+            }
+            else
+            {
+                return View("/Views/Account/Login.cshtml");
+            }
+
         }
 
         //
