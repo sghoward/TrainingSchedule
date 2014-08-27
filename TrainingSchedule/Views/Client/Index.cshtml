@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<TrainingSchedule.Models.Event>
+
+@{
     ViewBag.Title = "Index";
 }
 
@@ -10,15 +12,15 @@
         <tr>Event Name</tr>
         <tr>Event Date</tr>
         <tr>Technology</tr>
+        <tr>View Event Sylabus and completion</tr>
     </thead>
 
-    <thead>View Event Sylabus and completion</thead>
-    @foreach (Event item in Model)
+
+    @foreach (TrainingSchedule.Models.Event item in Model)
     {
-        <tr>@item.EventId</tr>
+        <tr>@item.EventID</tr>
         <tr>@item.EventName</tr>
-        <tr>@item.EventDate</tr>
-        <tr>@item.Technology</tr>
-        <tr> @Html.ActionLink("View", "Event", "Client", routeValues: null, htmlAttributes: new { id = "item.EventId" })</tr>
+        <tr>@item.Tech</tr>
+        <tr> @Html.ActionLink("View", "Event", "Client", routeValues: null, htmlAttributes: new { id = "@item.EventID" })</tr>
     }
 </table>

@@ -27,6 +27,7 @@ namespace TrainingSchedule.Models
         public int TechID { get; set; }
         public virtual Technology Tech { get; set; }
 
+        public List<Event> eventList { get; set; }
 
     }
 }

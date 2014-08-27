@@ -123,9 +123,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TrainingSchedule\TrainingSchedule.csproj">
+    <ProjectReference Include="..\TrainingSchedule\TrainingSchedulechanbges.csproj">
       <Project>{9A4865C4-51A5-4CE6-A39F-E036ABB665E6}</Project>
-      <Name>TrainingSchedule</Name>
+      <Name>TrainingSchedulechanbges</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

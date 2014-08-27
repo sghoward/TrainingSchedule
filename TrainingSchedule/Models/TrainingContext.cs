@@ -13,5 +13,6 @@ namespace TrainingSchedule.Models
         public DbSet<Syllabus> Syllabuses { get; set; }
         public DbSet<Event> Events { get; set; }
         public DbSet<Technology> Technologies { get; set; }
+        public DbSet<UserEvent> UserEvents { get; set; }
     }
 }
